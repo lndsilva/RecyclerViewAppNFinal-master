@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements Callback {
         adapter = new RecyclerAdapter(list);
         recyclerView.setAdapter(adapter);
 
-        PkRSS.with(this).load("http://rss.uol.com.br/feed/tecnologia.xml").skipCache().callback(this).async();
+        PkRSS.with(this).load("http://www.androidpro.com.br/feed/").skipCache().callback(this).async();
 
     }
 
